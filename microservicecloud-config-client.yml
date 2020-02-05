@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active:
+    - dev
+
+---
+spring:
+  port: 8081
+  profiles: dev
+  application:
+    name: studyspringcloud-config-dev
+
+---
+spring:
+  port: 8082
+  profiles: test
+  application:
+    name: studyspringcloud-config-test
